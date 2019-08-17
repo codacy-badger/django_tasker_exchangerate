@@ -1,6 +1,15 @@
 Welcome to Django Tasker Exchange Rate documentation!
 =====================================================
 
+.. image:: https://travis-ci.org/kostya-ten/django_tasker_exchangerate.svg?branch=master
+    :target: https://travis-ci.org/kostya-ten/django_tasker_exchangerate
+
+.. image:: https://readthedocs.org/projects/django-tasker-exchange-rate/badge/?version=latest
+    :target: https://django-tasker-exchange-rate.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+
+
 Requirements
 """"""""""""""""""
 * Python 3.6+
@@ -30,3 +39,8 @@ To enable ``django_tasker_exchangerate`` in your project you need to add it to `
         'django_tasker_exchangerate',
         # ...
     )
+
+Using
+""""""
+
+
