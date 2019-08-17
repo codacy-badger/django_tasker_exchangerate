@@ -42,5 +42,8 @@ To enable ``django_tasker_exchangerate`` in your project you need to add it to `
 
 Using
 """"""
+.. code-block:: python
 
-
+    from django_tasker_exchangerate import exchangerate
+    exchange = exchangerate.CBRF()
+    model = exchange.model()
