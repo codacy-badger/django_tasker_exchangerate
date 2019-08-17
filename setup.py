@@ -43,5 +43,6 @@ setup(
     install_requires=[
         'Django>=2.2.4',
         'requests[security]>=2.22.0',
+        'prospector>=1.1.7',
     ],
 )
