@@ -1,6 +1,6 @@
 from django.test import TestCase
 from django.core.management import call_command
-from django_tasker_exchangerate import models, exchangerate
+from django_tasker_exchangerate import models
 
 
 class ExchangeRate(TestCase):

@@ -1,4 +1,10 @@
 from django.db import migrations, models
+from django_tasker_exchangerate import exchangerate
+
+
+def update(_apps, _schema_editor):
+    exchange_cbrf = exchangerate.CBRF()
+    exchange_cbrf.download()
 
 
 class Migration(migrations.Migration):
@@ -29,4 +35,5 @@ class Migration(migrations.Migration):
                 'unique_together': {('date', 'code')},
             },
         ),
+        migrations.RunPython(update),
     ]
