@@ -9,7 +9,7 @@ Requirements
 Getting It
 """"""""""""""""""
 
-You can get Django Tasker Account by using pip::
+You can get Django Tasker Exchange Rate by using pip::
 
     $ pip install django-tasker-exchangerate
 
@@ -30,4 +30,3 @@ To enable ``django_tasker_exchangerate`` in your project you need to add it to `
         'django_tasker_exchangerate',
         # ...
     )
-
