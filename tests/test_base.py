@@ -14,7 +14,3 @@ class ExchangeRate(TestCase):
         self.assertEqual(result.source, 1)
         self.assertRegex(str(result.date), r'^[0-9]{4}\-[0-9]{2}\-[0-9]{2}$')
         self.assertEqual(result.get_source_display(), 'Central Bank of Russia')
-
-    from django_tasker_exchangerate import exchangerate
-    exchange = exchangerate.CBRF()
-    model = exchange.model()

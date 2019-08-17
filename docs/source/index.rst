@@ -47,3 +47,5 @@ Using
     from django_tasker_exchangerate import exchangerate
     exchange = exchangerate.CBRF()
     model = exchange.model()
+    result = model.objects.get(last=True, code="USD")
+    print(result.value)
