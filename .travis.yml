@@ -2,33 +2,28 @@ sudo: false
 dist: xenial
 language: python
 python:
-  - '3.6-dev'
-  - '3.6'
-  - '3.7'
-  - '3.7-dev'
-  - '3.8-dev'
-
+- 3.6-dev
+- '3.6'
+- '3.7'
+- 3.7-dev
+- 3.8-dev
 notifications:
   email:
     recipients:
-      - kostya@yandex.ru
+    - kostya@yandex.ru
     on_success: never
     on_failure: always
-
 branches:
   only:
-    - master
-
+  - master
 install:
-  - pip install -r requirements.txt
-
+- pip install -r requirements.txt
 script: python manage.py test
-
 deploy:
   provider: pypi
   user: kostya
   password:
-    secure: RelbDkMy0ldhUmYTwyOFe/m6MHu4tu4FZJ0T6oI/ubVlwsjAnruVXNyDNdKFcuH5+sZz7g5cJhSvJn/FgLqZKMfE/LfHquaXOPLfDjaNDlytLRt9/8kQs32eWR66GGPJnstGu8kKA2QVI8WJnc8XekWdUjNqW77suUE169O2okGcbaIa9V371XmhzJaLXpUbtzTbMsbO33Ha+FXAsLSSd26pCM1DdDx4IS2xCsrXpmMfo4xK7UfCFqMMVEPynZPhDmm93bfi4KoUf66YIjxDLEnK+7QkSNjfraDgfMrgGGC5La2LjWXNfpJnio+gKe92alr4Pr6RnU4q9kAPTwpRDPRMZon+WJ/Ho+YNl3Co+4mpwJXGjVhcroX3JlmctX1FZk2L0F7ruzeh5fNqsUSMc7neg2FB+LBdgN3HpikixG5NKpqaQX2i5JgYf9Vxq8n09iE89W29SHnTE1DSbTQiycG9X6LJAxhxopyebZe1Tl4A9G1LM0fed1zOd0GIr+SfpZebYBf/rFy80SNXybuu2dBwp0ElKtCjvOKsp61obmIjOavgWcF2FwuegryOEl3/1/6BkQM1SbItmG5fTmee/MGjjL//x/F7DbI4CFCLNJhG3zud8id70/YdWTj1iAFsZEpyyfAa+WX9FzWEQyLKIncEKboD7Xq1ZZmqpboWD98=
+    secure: Ur6TqRz4m4dQB5ImYzLCs+Rw/Xf2rQ78kVK4s7oVMRL5x7dOWyCGQNbzmIlGRb6l3Q1zASig2EwiYdqtVWr4MZLuGlg2hBzlPeegk14MZYe3Dd5X0K5NhqFUkBLRSFhFpt99z0PHVksOKlRZ524RDJewDM/zX1IzMTpAz7G77PywWLNZ/VNkSgiidmmY5lFqHSyZnPj/gkH58rFTrplrRml3zd3Iq/rVLMlbhsvaqjwM7ySrwEq1qJ+5CDlPoAGvVFvtSE4QnXgqyG+Fwn6AsBriJYGYSTpFpiDZ+pWZfVPGYrOAgWIaUu3Z7b4Dxyt2DSB5eSq25lS6GNLFpTtHbmboNyqqbaMFs1QyR+v0DF7ed59vF7CjMHzKg1cPw2togUYcQCaf3npeVTfs6Qu8Nk9DkJwgeX2a1mGpCN+NEzJtR2cbC+WTIr4OvhYmgJvUVtRjVNF5U5GnsuhhUnX4V//osDh5Hfij+OU5FKkLwWGcgtD8G3zl4cj08vFAhTQ1JjARBKipt5gs6LAEzDKjcYPYLqUgLPAkarPVooEvbCtf8adCyJdXKKMunkGI/aBWI3zxIKZr4KWpU9o3o3VXVWPx6T9ZweDyL1dCK2D4iraVE312wOLXzgvGUotkxGVXpLbjg0ibMmRKb7Xg7xCgw22Rb191HermPgwEyt7QZbA=
   skip_existing: true
   on:
     branch: master
