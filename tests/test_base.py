@@ -6,7 +6,7 @@ from django_tasker_exchangerate import models
 class ExchangeRate(TestCase):
     def test_download(self):
         call_command('exchangerate', '--action=cbrf')
-        result = models.ExchangeRate.objects.get(last=True, code='USD')
+        result = models.ExchangeRate.objects.get(last=True, code='USD', source=1)
         self.assertEqual(result.code, 'USD')
         self.assertIsNotNone(result.value)
 
