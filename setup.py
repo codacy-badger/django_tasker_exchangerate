@@ -39,6 +39,11 @@ setup(
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
         'License :: OSI Approved :: Apache Software License',
     ],
+    project_urls={
+        'Documentation': 'https://django-tasker-exchange-rate.readthedocs.io/',
+        'Source': 'https://github.com/kostya-ten/django_tasker_exchangerate/',
+        'Tracker': 'https://github.com/kostya-ten/django_tasker_exchangerate/issues',
+    },
     python_requires='>=3',
     install_requires=[
         'Django>=2.2.4',
