@@ -49,3 +49,11 @@ Using
     model = exchange.model()
     result = model.objects.get(last=True, code="USD")
     print(result.value)
+
+Update
+""""""
+You can update the exchange rate using cron
+
+.. code-block:: bash
+
+    14   00   *   *   *   root    test -x manage.py && manage.py exchangerate --action=cbrf
